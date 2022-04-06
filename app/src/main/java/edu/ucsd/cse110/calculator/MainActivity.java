@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         // There is a bug in this function! One of your exercises is to find it!
 
         // Hello world this is a new commen!
@@ -32,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
             int num1 = Utils.toIntNullsafe(num1Text);
             int num2 = Utils.toIntNullsafe(num2Text);
 
-            int answer = num1 + num2;
+            int answer = num1 * num2;
 
             TextView resultView = this.findViewById(R.id.result);
             resultView.setText(String.valueOf(answer));
