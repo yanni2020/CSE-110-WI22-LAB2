@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
             int num1 = Utils.toIntNullsafe(num1Text);
             int num2 = Utils.toIntNullsafe(num2Text);
 
-            int answer = num1 * num2;
+            int answer = num1 + num2;
 
             TextView resultView = this.findViewById(R.id.result);
             resultView.setText(String.valueOf(answer));
@@ -43,4 +43,5 @@ public class MainActivity extends AppCompatActivity {
         TextView view = this.findViewById(R.id.result);
         return !Utils.isEmpty(view.getText().toString());
     }
+
 }
